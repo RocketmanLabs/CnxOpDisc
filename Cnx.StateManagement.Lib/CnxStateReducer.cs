@@ -1,5 +1,6 @@
 ﻿using Cnx.StateManagement.Lib.Actions;
 using Cnx.StateManagement.Lib.Exceptions;
+using Cnx.StateManagement.Lib.Interfaces;
 using Redux;
 
 namespace Cnx.StateManagement.Lib
@@ -8,7 +9,7 @@ namespace Cnx.StateManagement.Lib
     {
         // base: void ToLog(action, reducerName);
 
-        public static int Execute(int state, IAction action)
+        public static T Execute<T>(int state, ICnxAction action) where T:class
         {
             if (action is IncrementAction) {
                 return state + 1;
@@ -16,7 +17,7 @@ namespace Cnx.StateManagement.Lib
             if (action is DecrementAction) {
                 return state - 1;
             }
-            throw new UnknownReduxActionException(action, "SysInfoReducer");
+            throw new UnknownReduxActionException("CnxStateReducer", action);
         }
     }
 }
