@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Cnx.DAL.Models")]
+[assembly: AssemblyTitle("Cnx.Shared.Actions")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Cnx.DAL.Models")]
+[assembly: AssemblyProduct("Cnx.Shared.Actions")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c4606eee-4120-4612-8d8c-965e325440c0")]
+[assembly: Guid("661afa9a-aa67-4557-8d7c-019d1eac9f43")]
 
 // Version information for an assembly consists of the following four values:
 //

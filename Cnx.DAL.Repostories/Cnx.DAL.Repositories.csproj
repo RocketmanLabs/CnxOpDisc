@@ -37,6 +37,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -59,9 +62,9 @@
       <Project>{53a9e99d-2a57-4b27-abad-b5701092b45f}</Project>
       <Name>Cnx.Core.Lib</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Cnx.DAL.Models\Cnx.DAL.Models.csproj">
-      <Project>{c4606eee-4120-4612-8d8c-965e325440c0}</Project>
-      <Name>Cnx.DAL.Models</Name>
+    <ProjectReference Include="..\Cnx.Shared.DAL.Models\Cnx.Shared.DAL.Models.csproj">
+      <Project>{5b1aabc4-dc06-425d-b56b-e452ced6bfb8}</Project>
+      <Name>Cnx.Shared.DAL.Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

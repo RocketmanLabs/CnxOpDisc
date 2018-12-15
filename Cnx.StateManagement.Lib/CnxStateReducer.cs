@@ -1,6 +1,6 @@
-﻿using Cnx.StateManagement.Lib.Actions;
+﻿using Cnx.Core.Lib;
+using Cnx.Core.Lib.Interfaces;
 using Cnx.StateManagement.Lib.Exceptions;
-using Cnx.StateManagement.Lib.Interfaces;
 using Redux;
 
 namespace Cnx.StateManagement.Lib
@@ -9,15 +9,23 @@ namespace Cnx.StateManagement.Lib
     {
         // base: void ToLog(action, reducerName);
 
-        public static T Execute<T>(int state, ICnxAction action) where T:class
+        public static Dto Execute(int state, Dto action)
         {
-            if (action is IncrementAction) {
-                return state + 1;
-            }
-            if (action is DecrementAction) {
-                return state - 1;
-            }
-            throw new UnknownReduxActionException("CnxStateReducer", action);
+            //switch (action.Request.Name) {
+            //    case "CreateInquiryAction":     // FacUserXId, Title, InqType => List<InqDto> x 3
+            //        break;
+            //    case "ViewInquiryAction":
+            //        break;
+            //    case "DeleteInquiryAction":
+            //        break;
+            //    case "UpdateInquiryAction":
+            //        break;
+            //    case "ListInquiriesAction":
+            //        break;
+            //    default:
+            //throw new UnknownReduxActionException("CnxStateReducer", action.Request);
+            //}
+            return null;
         }
     }
 }

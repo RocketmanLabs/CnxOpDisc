@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Redux;
 
-namespace Cnx.StateManagement.Lib.Actions
+namespace Cnx.Shared.Actions
 {
     public abstract class ActionBase : IAction
     {

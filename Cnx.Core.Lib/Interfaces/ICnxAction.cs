@@ -1,4 +1,4 @@
-﻿namespace Cnx.StateManagement.Lib.Interfaces
+﻿namespace Cnx.Core.Lib.Interfaces
 {
     public interface ICnxAction : Redux.IAction
     {

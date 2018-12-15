@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Cnx.Core.Lib;
+using Cnx.Shared.Actions;
 using Redux;
 
 namespace Cnx.StateManagement.Lib
@@ -11,8 +13,8 @@ namespace Cnx.StateManagement.Lib
     {
         public event EventHandler WriteLog;
 
-        private void InvokeWriteLog(IAction action, string reducerName) => WriteLog?.Invoke(this, EventArgs.Empty);
+        private void InvokeWriteLog(string msg) => WriteLog?.Invoke(this, EventArgs.Empty);
 
-        public void ToLog(IAction action, string reducerName) => InvokeWriteLog($"{DateTime.Now.ISO8601()} SUCCESS {action.Name}");
+        public void ToLog(ActionBase action, string reducerName) => InvokeWriteLog($"{DateTime.Now.ISO8601()} SUCCESS {action.Name}");
     }
 }

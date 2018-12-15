@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Runtime.Serialization;
 using Cnx.Core.Lib;
-using Cnx.StateManagement.Lib.Interfaces;
-using Redux;
+using Cnx.Core.Lib.Interfaces;
 
 namespace Cnx.StateManagement.Lib.Exceptions
 {
